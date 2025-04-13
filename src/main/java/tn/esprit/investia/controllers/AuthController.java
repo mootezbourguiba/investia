@@ -1,4 +1,4 @@
-package tn.esprit.investia.controller;
+package tn.esprit.investia.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

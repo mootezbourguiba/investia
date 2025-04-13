@@ -3,13 +3,12 @@ package tn.esprit.investia.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import tn.esprit.investia.model.CryptoCurrency;
-import tn.esprit.investia.model.CryptoPrice;
+import tn.esprit.investia.entities.CryptoCurrency;
+import tn.esprit.investia.entities.CryptoPrice;
 import tn.esprit.investia.repository.CryptoPriceRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class CryptoPriceService {

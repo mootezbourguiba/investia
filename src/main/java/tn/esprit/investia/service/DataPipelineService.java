@@ -2,7 +2,7 @@ package tn.esprit.investia.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import tn.esprit.investia.model.CryptoCurrency;
+import tn.esprit.investia.entities.CryptoCurrency;
 import tn.esprit.investia.repository.CryptoCurrencyRepository;
 
 import java.util.List;

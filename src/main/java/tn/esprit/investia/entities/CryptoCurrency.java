@@ -1,21 +1,20 @@
-package tn.esprit.investia.model;
+package tn.esprit.investia.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 import java.time.OffsetDateTime;
-import java.util.List;
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CryptoCurrency {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    //@GeneratedValue(strategy = GenerationType.IDENTITY) // Remove auto generation
+    @JsonProperty("id")
+    private String id; // Changed from Long to String
 
     @JsonProperty("name")
     private String name;
@@ -85,8 +84,8 @@ public class CryptoCurrency {
     @JsonProperty("atl_date")
     private OffsetDateTime atlDate;
     // Getters et Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public String getId() { return id; } //changer le type de long à String
+    public void setId(String id) { this.id = id; }
 
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }

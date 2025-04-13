@@ -1,9 +1,9 @@
-package tn.esprit.investia.controller;
+package tn.esprit.investia.controllers;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import tn.esprit.investia.service.CoinGeckoService;
-import tn.esprit.investia.model.CryptoCurrency;
+import tn.esprit.investia.entities.CryptoCurrency;
 import java.util.List;
 
 @RestController

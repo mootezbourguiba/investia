@@ -1,4 +1,4 @@
-package tn.esprit.investia.model;
+package tn.esprit.investia.entities;
 
 public class LoginRequest {
     private String username;
